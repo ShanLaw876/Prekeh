@@ -1,0 +1,185 @@
+:root {
+    --green: #295B4D;
+    --green-dark: #1F463B;
+    --sand: #F5F0E6;
+    --sand-card: #EFE6D6;
+    --tan-border: #D8C8B3;
+    --brown: #7A5C45;
+    --text: #2D2D2D;
+    --muted: #5F5A52;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Manrope", Arial, Helvetica, sans-serif;
+    background-color: var(--sand);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header {
+    padding: 32px 8%;
+    background-color: var(--sand);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    color: var(--green);
+}
+
+section {
+    padding: 70px 8%;
+}
+
+#about {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    font-size: clamp(1.8rem, 3.8vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.06em;
+    color: var(--text);
+}
+
+#about::after {
+    content: "Join the waitlist below.";
+    display: block;
+    margin-top: 28px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.5;
+    color: var(--green);
+}
+
+#why,
+#how,
+#form {
+    max-width: 900px;
+    margin: 34px auto;
+    background-color: var(--sand-card);
+    border: 1px solid var(--tan-border);
+    border-radius: 26px;
+    padding: 58px 7%;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    color: var(--green);
+    font-size: 2rem;
+    line-height: 1.2;
+    letter-spacing: -0.04em;
+}
+
+p,
+li {
+    font-size: 1.08rem;
+    color: var(--muted);
+}
+
+ol {
+    padding-left: 24px;
+    margin-bottom: 0;
+}
+
+li {
+    margin-bottom: 14px;
+}
+
+#form p {
+    margin-top: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+label {
+    font-weight: 700;
+    color: var(--green-dark);
+}
+
+input {
+    width: 100%;
+    padding: 15px 16px;
+    border: 1px solid var(--tan-border);
+    border-radius: 14px;
+    background-color: #FAF7F1;
+    color: var(--text);
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: 3px solid rgba(41, 91, 77, 0.18);
+    border-color: var(--green);
+}
+
+button {
+    margin-top: 16px;
+    padding: 16px 22px;
+    border: none;
+    border-radius: 999px;
+    background-color: var(--green);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--green-dark);
+}
+
+footer {
+    margin-top: 70px;
+    padding: 44px 8%;
+    background-color: var(--green);
+    color: #F5F0E6;
+    text-align: center;
+}
+
+footer p {
+    margin: 6px 0;
+    color: #F5F0E6;
+}
+
+@media (max-width: 700px) {
+    header,
+    section,
+    footer {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #about {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+
+    #why,
+    #how,
+    #form {
+        padding: 38px 24px;
+        border-radius: 20px;
+    }
+}
